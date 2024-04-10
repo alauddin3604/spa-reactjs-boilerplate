@@ -1,7 +1,8 @@
 import http from '@/http'
 
 export default {
-    index() {
-        return http.get('/api/users')
+    index(query: Record<string, string>) {
+        const params = new URLSearchParams(query).toString()
+        return http.get(`/api/users?${params}`)
     },
 }
