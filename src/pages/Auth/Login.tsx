@@ -21,11 +21,11 @@ const Login = () => {
         setLoggingIn(true)
 
         try {
+            const credentials = {email, password}
+
             await AuthService.getCsrfCookie()
-            await AuthService.login({
-                email,
-                password
-            })
+            await AuthService.login(credentials)
+
             navigate('/')
         } catch (error) {
             console.error(error)

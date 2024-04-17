@@ -4,7 +4,7 @@ export default {
     getCsrfCookie() {
         return http.get('/sanctum/csrf-cookie')
     },
-    login(data: object = {}) {
+    login(data: {email: string, password: string}) {
         return http.post('/api/login', data)
     },
     logout() {
