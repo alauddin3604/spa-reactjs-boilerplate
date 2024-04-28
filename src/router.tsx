@@ -3,7 +3,7 @@ import RootLayout from '@/layouts/RootLayout'
 import ForgotPassword from '@/pages/Auth/ForgotPassword'
 import Login from '@/pages/Auth/Login'
 import Home from '@/pages/Home'
-import UserIndex from '@/pages/Users'
+import UserIndex from '@/pages/users'
 import { Navigate, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { RoleIndex } from '@/pages/settings/roles'
 
